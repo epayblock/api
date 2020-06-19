@@ -1,0 +1,3268 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference v1.0</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+</style>
+  <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap" rel="stylesheet" media="all" />
+  <script src="javascripts/all.js"></script>
+</head>
+
+<body class="index" data-languages="[&quot;shell--sandbox&quot;,&quot;shell--production&quot;]">
+  <a href="#" id="nav-button">
+    <span>
+      MENU
+      <img src="images/navbar.png" alt="Navbar" />
+    </span>
+  </a>
+  <div class="toc-wrapper">
+    <img src="images/logo.svg" class="logo" alt="Logo" />
+    <div class="search">
+      <input type="text" class="search" id="input-search" placeholder="Search">
+    </div>
+    <ul class="search-results"></ul>
+    <div id="toc" class="toc-list-h1">
+      <li>
+
+        <ul class="toc-list-h2">
+          <li>
+            <a href="#business-api-getting-started" class="toc-h2 toc-link" data-title="Getting started">Getting started</a>
+            <ul class="toc-list-h3">
+              <li>
+                <a href="#business-api-generate-signature" class="toc-h3 toc-link" data-title="Generate signature">Generate signature</a>
+              </li>
+              <li>
+                <a href="#business-api-sign-up" class="toc-h3 toc-link" data-title="Sign up">Sign up</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#business-api-authentication" class="toc-h2 toc-link" data-title="Authentication">Authentication</a>
+            <ul class="toc-list-h3">
+              <li>
+                <a href="#business-api-authentication-sign-in" class="toc-h3 toc-link" data-title="Sign in to your Business account">Sign in to your Business account</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#business-api-profile" class="toc-h2 toc-link" data-title="Profile">Profile</a>
+            <ul class="toc-list-h3">
+              <li>
+                <a href="#business-api-profile-change-name" class="toc-h3 toc-link" data-title="Change Name">Change Name</a>
+              </li>
+              <li>
+                <a href="#business-api-profile-change-pin" class="toc-h3 toc-link" data-title="Change PIN">Change PIN</a>
+              </li>
+              <li>
+                <a href="#business-api-profile-change-phone" class="toc-h3 toc-link" data-title="Change Phone">Change Phone</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#business-api-account" class="toc-h2 toc-link" data-title="Account">Account</a>
+            <ul class="toc-list-h3">
+              <!-- TODO: when ready
+                       <li>
+                         <a href="#business-api-account-add-iban" class="toc-h3 toc-link" data-title="Add IBAN">Add IBAN</a>
+                       </li>
+                       -->
+              <li>
+                <a href="#business-api-account-disable-device" class="toc-h3 toc-link" data-title="Disable Device">Disable device</a>
+              </li>
+              <!-- TODO: when ready
+                       <li>
+                         <a href="#business-api-account-add-permission" class="toc-h3 toc-link" data-title="Add Permission">Add Permission</a>
+                       </li>
+                       <li>
+                         <a href="#business-api-account-delete-permission" class="toc-h3 toc-link" data-title="Delete Permission">Delete Permission</a>
+                       </li>
+                       -->
+            </ul>
+          </li>
+          <li>
+            <a href="#business-api-recipients" class="toc-h2 toc-link" data-title="Recipients">Recipients</a>
+            <ul class="toc-list-h3">
+              <li>
+                <a href="#business-api-recipients-add-recipient" class="toc-h3 toc-link" data-title="Add Recipient">Add Recipient</a>
+              </li>
+              <li>
+                <a href="#business-api-recipients-delete-recipient" class="toc-h3 toc-link" data-title="Delete Recipient">Delete Recipient</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#business-api-transfers" class="toc-h2 toc-link" data-title="Transfers">Transfers</a>
+            <ul class="toc-list-h3">
+              <li>
+                <a href="#business-api-transfers-send-transfer" class="toc-h3 toc-link" data-title="Send Transfer">Send Transfer</a>
+              </li>
+              <li>
+                <a href="#business-api-transfers-get-transfers" class="toc-h3 toc-link" data-title="Get Transfers">Get Transfers</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#business-api-actions" class="toc-h2 toc-link" data-title="Actions">Actions</a>
+            <ul class="toc-list-h3">
+              <li>
+                <a href="#business-api-actions-get-action" class="toc-h3 toc-link" data-title="Get Action">Get Action</a>
+              </li>
+              <li>
+                <a href="#business-api-actions-cancel-action" class="toc-h3 toc-link" data-title="Cancel Action">Cancel Action</a>
+              </li>
+              <li>
+                <a href="#business-api-actions-get-actions" class="toc-h3 toc-link" data-title="Get Actions">Get Actions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </div>
+    <ul class="toc-footer">
+      <li><a href='https://epayblock.com'>Sign up for Epayblock</a></li>
+      <li><br/>Copyright © 2020 Epayblock UAB</li>
+    </ul>
+  </div>
+  <div class="page-wrapper">
+    <div class="dark-box"></div>
+    <div class="content">
+
+  <h2 id='business-api-getting-started'>Getting started</h2>
+
+  <h3 id='business-api-generate-signature'>Generate signature</h3>
+<h4 id='business-api-authentication-sign-in-signature'>How to generate signature</h4>
+
+<h5>You need to have these local values for subsequent apiRequest:</h5><br/>
+<p><code>const secretKeyString = generateSecretKeyString(createKeyPairObject())
+const email = 'example@mail.com'
+const phone = '+48111222333'
+const pin = '12345678'
+let lastUpdateTime = getLastUpdateTime(0) - needs to be updated after every api request</code></p>
+
+<h5>Process of signature generation:</h5><br/>
+<p><code>import nacl from 'tweet-nacl-react-native-expo'
+import { TextEncoderLite as TextEncoder } from 'text-encoder-lite'
+const signDetached = nacl.sign.detached
+const signKeyPair = nacl.sign.keyPair
+
+type SigningSourceArr = [string, string, string, number, string, string]
+
+const createKeyPairObject = signKeyPair
+const tEnc = () => new TextEncoder()
+const toHexString = (bytes) => bytes.reduce((str, byte) => str + byte.toString(16).padStart(2, '0'), '')
+const fromHexString = (hexString) => new Uint8Array(hexString.match(/.{1,2}/g).map((byte) => parseInt(byte, 16)))
+const getKeyPairFromSecretKeyString = (secretKeyString: string) => signKeyPair.fromSecretKey(fromHexString(secretKeyString))
+
+const getXpkeys = (secretKeyString) => {
+  const keyPairObject = getKeyPairFromSecretKeyString(secretKeyString)
+  const { publicKey } = keyPairObject
+  const Xpkey64 = toHexString(publicKey)
+  const Xpkey32 = Xpkey64.substr(0, 32)
+  const Xpkey16 = Xpkey64.substr(0, 16)
+  return { Xpkey64, Xpkey32, Xpkey16 }
+}
+
+const getLastUpdateTime = (currentlastUpdateTime: number): number => {
+  let Xutime = Math.floor(Date.now() / 1000)
+  if (Xutime <= currentlastUpdateTime) {
+    Xutime = currentlastUpdateTime + 1
+  }
+  return Xutime
+}
+
+const getDetachedSignature = (signingSourceArr: SigningSourceArr, secretKey: string): string => {
+  const content = tEnc().encode(signingSourceArr.join('^'))
+  const detached = signDetached(
+    content,
+    secretKey,
+  )
+  return toHexString(detached)
+}
+
+const generateSecretKeyString = (keyPairObject) => toHexString(keyPairObject.secretKey)
+
+const getSignature = ({ secretKeyString, email, phone, lastUpdateTime, pin, signingMessage }) => {
+  if (!secretKeyString) {
+    console.error('keyString is empty [get]')
+    return ''
+  }
+
+const { Xpkey64 } = getXpkeys(secretKeyString)
+  const signingSourceArr: SigningSourceArr = [Xpkey64, email, phone, lastUpdateTime, pin, signingMessage]
+  const keyPairObject = getKeyPairFromSecretKeyString(secretKeyString)
+  const { secretKey } = keyPairObject
+  return getDetachedSignature(signingSourceArr, secretKey)
+}
+
+const getSignedPayload = ({ secretKeyString, email, phone, lastUpdateTime, pin, signingMessage, apiActionType, payload }) => {
+  const signature = getSignature({ secretKeyString, email, phone, lastUpdateTime, pin, signingMessage })
+  const { Xpkey64, Xpkey32 } = getXpkeys(secretKeyString)
+  return {
+    method: apiActionType,
+    pkey: apiActionType === 'register' ? Xpkey64 : Xpkey32,
+    utime: lastUpdateTime,
+    sign: signature,
+    pin: pin,
+    ...payload,
+  }
+}
+</code></p>
+
+  <h3 id='business-api-sign-up'>Sign up</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>register</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>7306be42943c6b6ffdadec467932c0ce94c04f2873537f3fc477b29544c78fbf</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587112069</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>e0ae92a46ae1d0c3139afea5d7b9a8bd7487aafbe31864da16edc56681d0074bab52e96bb2eacb5e68eceda4738dceafda0ba8b0de25615dfbe89da5d9672b01</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>email</td>
+<td>smithbioinfo@email.com</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>+00111222333</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>0</td>
+</tr>
+<tr>
+<td>fixIp</td>
+<td>0</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56913"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"register"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Register"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<h4 id='business-api-sign-up-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-sign-up-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>Public key (64char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>email</td>
+<td>Email address of account</td>
+<td>String</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>Phone number of account</td>
+<td>String</td>
+</tr>
+<tr>
+  <td>trusted</td>
+  <td>Type of account</td>
+  <td>Number</td>
+</tr>
+<tr>
+  <td>fixIp</td>
+  <td>fixed device's IP address</td>
+  <td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-sign-up-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<h2 id='business-api-authentication'>Authentication</h2>
+<h3 id='business-api-authentication-sign-in'>Sign in to your Business account</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>login</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>9be238470c8ef012205ce766ab23f7b8</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587103994</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>b5afffd2effe07da03565dc52a2caff3bc62a9a8b00d8c11493bf2acf58f119b42b983dfe9b6b80555018ec059bdd4b289c55217e47709311688c5c9024ff60d</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"pkey"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">22654</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"born"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:52:24.000000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:52:24.000000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fixip"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fixipip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+  <span class="p">},</span><span class="w"></span>
+  </span><span class="s2">"profiles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"private low risk"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"risk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"low"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"limitin"</span><span class="p">:</span><span class="w"> </span><span class="s2">6000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"atype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"private"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fee_day"</span><span class="p">:</span><span class="w"> </span><span class="s2">0.00005</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fee_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">10</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fee_open"</span><span class="p">:</span><span class="w"> </span><span class="s2">10</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">],</span><span class="w"></span>
+  </span><span class="s2">"waiting"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">56896</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"127.0.0.1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:52:24.000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"change_phone"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"utime"</span><span class="p">:</span><span class="w"> </span><span class="s2">1584615566</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"waiting"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pkey_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">22654</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">],</span><span class="w"></span>
+  </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">12382</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"born"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:48:02.000000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"atype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"local"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lastin"</span><span class="p">:</span><span class="w"> </span><span class="s2">592757</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lastout"</span><span class="p">:</span><span class="w"> </span><span class="s2">592759</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lastaction"</span><span class="p">:</span><span class="w"> </span><span class="s2">56896</span><span class="p">,</span><span class="w">
+  <span class="p">}</span><span class="w"></span>
+  </span><span class="s2">"ibans"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">52400</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EPUALT22XXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"born"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:48:02.000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LT113350090100022382"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d.drozd+1@bioinfo.pl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastin"</span><span class="p">:</span><span class="w"> </span><span class="s2">592757</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastout"</span><span class="p">:</span><span class="w"> </span><span class="s2">592759</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"official_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">],</span><span class="w"></span>
+  </span><span class="s2">"balances"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">12468</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"balance"</span><span class="p">:</span><span class="w"> </span><span class="s2">70</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iban_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">52400</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">],</span><span class="w"></span>
+  </span><span class="s2">"targets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">92631</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LT113350090100022382"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Smith"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"j.smith@bioinfo.pl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epay transfer"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"maxamount"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"balance_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">12468</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">],</span><span class="w"></span>
+  </span><span class="s2">"keys"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">22654</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"born"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:52:24.000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9be238470c8ef012205ce766ab23f7b836f253c1a43960887c05222da7e201a0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:52:24.000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fixipip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">12382</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">],</span><span class="w"></span>
+  </span><span class="s2">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">56876</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ipa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"127.0.0.1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:55:51.000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"register"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"utime"</span><span class="p">:</span><span class="w"> </span><span class="s2">1584536151</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">22654</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"done"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pkey_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">22654</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">],</span><span class="w"></span>
+  </span><span class="s2">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    <span class="p">{</span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">592759</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fee"</span><span class="p">:</span><span class="w"> </span><span class="s2">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"born"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:55:51.000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epay transfer"</span><span class="w">
+      <span class="p">},</span><span class="w"></span>
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-19 09:58:57.000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">10</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"waiting"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LT113350090100022382"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Adam Johnson"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EPUALT22XXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aj@bioinfo.pl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LT113350090100022382"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a.smith@bioinfo.pl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"target_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">92631</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"balance_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">12468</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epay transfer"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sepa_msgid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_to_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_to_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_official"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_from_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_from_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+    <span class="p">}</span>
+  <span class="p">]</span><span class="w"></span>
+</span><span class="p">}</span><span class="w"></span>
+</code></pre>
+
+<h4 id='business-api-authentication-sign-in-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-authentication-sign-in-request-fields'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-authentication-sign-in-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pkey</td>
+<td>Object of public key's details</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>pkey.id</td>
+<td>ID of public key</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>pkey.born</td>
+<td>Date of key creation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey.sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey.fixip</td>
+<td>fixed device's IP address</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>pkey.status</td>
+<td>Status of public key</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey.fixipip</td>
+<td>fixed device's IP address</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey.trusted</td>
+<td>Type of account</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>profiles</td>
+<td>List of available IBAN profiles to purchase</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>waiting</td>
+<td>List of pending actions</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>waiting[n].id</td>
+<td>ID of waiting action</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>waiting[n].ip</td>
+<td>IP address of action dispatcher</td>
+<td>String</td>
+</tr>
+<tr>
+<td>waiting[n].sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>waiting[n].task</td>
+<td>Task name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>waiting[n].utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>waiting[n].errors</td>
+<td>Number of action's errors</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>waiting[n].obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>waiting[n].status</td>
+<td>Status of waiting action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>waiting[n].pkey_id</td>
+<td>ID of dispatcher's public key</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Object of user's details</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>user.id</td>
+<td>ID of user</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>user.born</td>
+<td>Date of creation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>user.lastIn</td>
+<td>Date of last signing in</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>user.status</td>
+<td>Status of account</td>
+<td>String</td>
+</tr>
+<tr>
+<td>user.lastOut</td>
+<td>Date of last log out</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>user.lastAction</td>
+<td>ID of last dispatched action</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>ibans</td>
+<td>List of IBANs for account</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>ibans[n].id</td>
+<td>ID of IBAN</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>ibans[n].bic</td>
+<td>BIC of IBAN</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>ibans[n].born</td>
+<td>Date of IBAN creation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ibans[n].data</td>
+<td>undocumented</td>
+<td>undocumented</td>
+</tr>
+<tr>
+<td>ibans[n].iban</td>
+<td>IBAN number</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ibans[n].name</td>
+<td>Name of IBAN owner</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ibans[n].lastin</td>
+<td>undocumented</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ibans[n].lastout</td>
+<td>undocumented</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ibans[n].official_name</td>
+<td>IBAN's official name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>balances</td>
+<td>List of account's balances</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>balances[n].id</td>
+<td>ID of balance</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>balances[n].balance</td>
+<td>Amount in balance</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>balances[n].ibanId</td>
+<td>ID of IBAN</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>balances[n].currency</td>
+<td>Balance currency</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets</td>
+<td>List of recipients</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>targets[n].id</td>
+<td>ID of target</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>targets[n].bic</td>
+<td>BIC of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets[n].data</td>
+<td>undocumented</td>
+<td>undocumented</td>
+</tr>
+<tr>
+<td>targets[n].iban</td>
+<td>IBAN of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets[n].name</td>
+<td>Name of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets[n].email</td>
+<td>Email address of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets[n].title</td>
+<td>Title of last transfer</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets[n].status</td>
+<td>Status of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets[n].currency</td>
+<td>Currency of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targets[n].maxAmount</td>
+<td>Maximum amount of transfer</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>targets[n].balance_id</td>
+<td>ID of target's balance</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>List of keys</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>keys[n].id</td>
+<td>ID of key</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>keys[n].born</td>
+<td>Date of key creation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keys[n].pkey</td>
+<td>Public key</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keys[n].sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keys[n].status</td>
+<td>Status of key</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keys[n].fixipip</td>
+<td>fixed device's IP address</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keys[n].trusted</td>
+<td>Type of account</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>keys[n].user_id</td>
+<td>ID of user</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>actions</td>
+<td>Actions</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>actions[n].id</td>
+<td>ID of action</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>actions[n].ipa</td>
+<td>IP address of action dispatcher</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keys[n].sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actions[n].task</td>
+<td>Type of task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actions[n].utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>actions[n].errors</td>
+<td>Number of errors</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>actions[n].obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>actions[n].status</td>
+<td>Status of action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actions[n].pkey_id</td>
+<td>ID of public key</td>
+<td>Number</td>
+</tr>
+
+
+<tr>
+<td>actions</td>
+<td>Actions</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>actions[n].id</td>
+<td>ID of action</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>transactions[n].fee</td>
+<td>Fee of the action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].born</td>
+<td>Creation date of the action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data</td>
+<td>Object with title</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>transactions[n].sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].amount</td>
+<td>Amount send in the action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].status</td>
+<td>Status of the action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_bic</td>
+<td>BIC of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_iban</td>
+<td>IBAN of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_name</td>
+<td>Email of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].currency</td>
+<td>Currency of action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].from_bic</td>
+<td>BIC of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_email</td>
+<td>Email address of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_from_iban</td>
+<td>IBAN of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_from_name</td>
+<td>Name of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].target_id</td>
+<td>Target ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].balance_id</td>
+<td>Balance ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_title</td>
+<td>Title of action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].sepa_msgid</td>
+<td>SEPA message ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_to_iban</td>
+<td>IBAN of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_to_name</td>
+<td>Name of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].from_official</td>
+<td>Official name of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_from_iban</td>
+<td>undocumented</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_from_name</td>
+<td>undocumented</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+
+<h2 id='business-api-profile'>Profile</h2>
+<h3 id='business-api-profile-change-name'>Change Name</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>change_name</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>9be238470c8ef012205ce766ab23f7b8</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587103994</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>b5afffd2effe07da03565dc52a2caff3bc62a9a8b00d8c11493bf2acf58f119b42b983dfe9b6b80555018ec059bdd4b289c55217e47709311688c5c9024ff60d</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>ibanId</td>
+<td>12468</td>
+</tr>
+<tr>
+<td>newName</td>
+<td>John Smith</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56913"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"change_name"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Change name"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint changes your IBAN account name.</p>
+<h4 id='business-api-profile-change-name-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-profile-change-name-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>newName</td>
+<td>New account name</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-profile-change-name-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+<h3 id='business-api-profile-change-pin'>Change PIN</h3>
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>change_pin</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>9be238470c8ef012205ce766ab23f7b8</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587103994</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>b5afffd2effe07da03565dc52a2caff3bc62a9a8b00d8c11493bf2acf58f119b42b983dfe9b6b80555018ec059bdd4b289c55217e47709311688c5c9024ff60d</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>newPin</td>
+<td>0000</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56913"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"change_pin"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Change pin"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint changes your account PIN.</p>
+<h4 id='business-api-profile-change-pin-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-profile-change-pin-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>newPin</td>
+<td>New account PIN</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-profile-change-pin-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+
+<h3 id='business-api-profile-change-phone'>Change Phone</h3>
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>change_phone</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>9be238470c8ef012205ce766ab23f7b8</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587103994</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>b5afffd2effe07da03565dc52a2caff3bc62a9a8b00d8c11493bf2acf58f119b42b983dfe9b6b80555018ec059bdd4b289c55217e47709311688c5c9024ff60d</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>newPhone</td>
+<td>+00111222333</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56913"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"change_phone"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Change phone to +00111222333"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+
+<p>This endpoint changes your account phone number.</p>
+<h4 id='business-api-profile-change-phone-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-profile-change-phone-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>newPhone</td>
+<td>New phone number</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-profile-change-phone-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+
+<h2 id='business-api-account'>Account</h2>
+<!-- TODO: uncommenct when ready
+<h3 id='business-api-account-add-iban'>Add IBAN</h3>
+<blockquote>
+  <div><p>Add new IBAN account.</p></div>
+</blockquote>
+  <pre class="highlight shell tab-shell--sandbox"><code>curl https://epayblock.com/api/api.php? <span class="se">\</span>
+  <span class="nv">method</span><span class="o">=</span>add_iban <span class="se">\</span>
+  &amp;pkey<span class="o">=</span>1279da9afd103c53a22dc1ba60546960 <span class="se">\</span>
+  &amp;utime<span class="o">=</span>1584538156 <span class="se">\</span>
+  &amp;sign<span class="o">=</span>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205 <span class="se">\</span>
+  &amp;pin<span class="o">=</span>1000 <span class="se">\</span>
+  &amp;balanceId<span class="o">=</span>1010 <span class="se">\</span>
+  &amp;iban<span class="o">=</span>LT023350090100022350 <span class="se">\</span>
+  &amp;name<span class="o">=</span>IbanAccount2 <span class="se">\</span>
+  </code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+  <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"??"</span><span class="p">,</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span></code></pre>
+
+<p>This endpoint changes your account PIN.</p>
+<h4 id='business-api-account-add-iban-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-account-add-iban-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targetId</td>
+<td>ID of recipient</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>balanceId</td>
+<td>ID of balance??</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>iban</td>
+<td>IBAN to add</td>
+<td>string</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Name of new IBAN</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-account-add-iban-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>??</td>
+<td>??</td>
+<td>??</td>
+</tr>
+</tbody></table>
+-->
+<h3 id='business-api-account-disable-device'>Disable Device</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>del_key</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>9be238470c8ef012205ce766ab23f7b8</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587103994</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>b5afffd2effe07da03565dc52a2caff3bc62a9a8b00d8c11493bf2acf58f119b42b983dfe9b6b80555018ec059bdd4b289c55217e47709311688c5c9024ff60d</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+  <td>keyId</td>
+  <td>22665</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56937"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22655"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"del_key"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Delete device"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<h4 id='business-api-account-disable-device-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-account-disable-device-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keyId</td>
+<td>Device ID</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-account-disable-device-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<!--  TODO : when ready
+<h3 id='business-api-account-add-permission'>Add Permission</h3>
+<blockquote>
+  <div><p>Give someone permission to your account.</p></div>
+</blockquote>
+  <pre class="highlight shell tab-shell--sandbox"><code>curl https://epayblock.com/api/api.php? <span class="se">\</span>
+  <span class="nv">method</span><span class="o">=</span>add_permission <span class="se">\</span>
+  &amp;pkey<span class="o">=</span>1279da9afd103c53a22dc1ba60546960 <span class="se">\</span>
+  &amp;utime<span class="o">=</span>1584538156 <span class="se">\</span>
+  &amp;sign<span class="o">=</span>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205 <span class="se">\</span>
+  &amp;pin<span class="o">=</span>1000 <span class="se">\</span>
+  &amp;userId<span class="o">=</span>1010 <span class="se">\</span>
+  &amp;tmail<span class="o">=</span>d.drozd@bioinfo.pl <span class="se">\</span>
+  &amp;ibanId<span class="o">=</span>LT023350090100022350 <span class="se">\</span>
+  &amp;readWrite<span class="o">=</span>true <span class="se">\</span>
+  </code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+  <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"df8d6b20-0725-482e-a29e-fb09631480cf"</span><span class="p">,</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span></code></pre>
+
+<p>This endpoint gives someone permission to your account.</p>
+<h4 id='business-api-account-add-permission-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-account-add-permission-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the ID of the account to retrieve</td>
+<td>UUID</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-account-add-permission-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>UUID</td>
+</tr>
+</tbody></table>
+
+<h3 id='business-api-account-delete-permission'>Delete Permission</h3>
+<blockquote>
+  <div><p>Delete permission to your account.</p></div>
+</blockquote>
+  <pre class="highlight shell tab-shell--sandbox"><code>curl https://epayblock.com/api/api.php? <span class="se">\</span>
+  <span class="nv">method</span><span class="o">=</span>del_permission <span class="se">\</span>
+  &amp;pkey<span class="o">=</span>1279da9afd103c53a22dc1ba60546960 <span class="se">\</span>
+  &amp;utime<span class="o">=</span>1584538156 <span class="se">\</span>
+  &amp;sign<span class="o">=</span>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205 <span class="se">\</span>
+  &amp;pin<span class="o">=</span>1000 <span class="se">\</span>
+  &amp;permissionId<span class="o">=</span>1010 <span class="se">\</span>
+  </code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+  <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"df8d6b20-0725-482e-a29e-fb09631480cf"</span><span class="p">,</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span></code></pre>
+
+<p>This endpoint gives someone permission to your account.</p>
+<h4 id='business-api-account-delete-permission-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-account-delete-permission-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>permissionId</td>
+<td>the ID of the permission to delete</td>
+<td>UUID</td>
+</tr>
+</tbody></table>
+-->
+
+
+
+<h2 id='business-api-recipients'>Recipients</h2>
+<h3 id='business-api-recipients-add-recipient'>Add Recipient</h3>
+
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>add_target</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>1279da9afd103c53a22dc1ba60546960</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1584538156</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>5</td>
+</tr>
+<tr>
+<td>balanceid</td>
+<td>12468</td>
+</tr>
+<tr>
+<td>newName</td>
+<td>John Smith</td>
+</tr>
+<tr>
+<td>newName</td>
+<td>John Smith</td>
+</tr>
+<tr>
+<td>tmail *</td>
+<td>smithepayblock@mail.com</td>
+</tr>
+<tr>
+<td>iban</td>
+<td>LT023350090100022350</td>
+</tr>
+<tr>
+<td>newAddress</td>
+<td>San Francisco</td>
+</tr>
+<tr>
+<td>newCountry</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>newTitle</td>
+<td>My first transaction</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>0</td>
+</tr>
+<tr>
+<td>maxAmount</td>
+<td>0</td>
+</tr>
+</tbody></table></code></pre>
+
+  </blockquote><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56884"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"92628"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"592758"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"add_target"</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Add new transfer destination to LT023350090100022350 , monthly limit: 0.00 EUR, and send 5.00 EUR"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<h4 id='business-api-recipients-add-recipient-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-recipients-add-recipient-request-fields'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>Sent amount	</td>
+<td>Number (9 digits in decimal part of number)</td>
+</tr>
+<tr>
+<td>balanceId</td>
+<td>ID of balance</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>newName</td>
+<td>Name of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>tmail *(optional)</td>
+<td>Email address of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>iban</td>
+<td>IBAN of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>newAddress</td>
+<td>Address of the target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>newCountry</td>
+<td>Alpha-2 country code of the target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>newTitle</td>
+<td>Title of transaction</td>
+<td>String</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>Sent amount</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>maxAmount</td>
+<td>Maximum permitted amount to send</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-recipients-add-recipient-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>ID of action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>obj_data</td>
+<td>Additional data for some actions</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+<h3 id='business-api-recipients-delete-recipient'>Delete Recipient</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>del_target</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>1279da9afd103c53a22dc1ba60546960</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1584538156</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>targetId</td>
+<td>92631</td></tr></tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56938"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"92628"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"del_target"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Delete transfer destination"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+  <p>This endpoint deletes a recipient with the given ID.</p>
+  <h4 id='business-api-recipients-delete-recipient-request'>Request</h4>
+  <p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-recipients-delete-recipient-request-url-parameters'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targetId</td>
+<td>ID of recipient</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-recipients-delete-recipient-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>ID of action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+
+<h2 id='business-api-transfers'>Transfers</h2>
+<h3 id='business-api-transfers-send-transfer'>Send Transfer</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>send_transaction</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>9be238470c8ef012205ce766ab23f7b8</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587103994</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>b5afffd2effe07da03565dc52a2caff3bc62a9a8b00d8c11493bf2acf58f119b42b983dfe9b6b80555018ec059bdd4b289c55217e47709311688c5c9024ff60d</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>targetId</td>
+<td>92628</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>5</td>
+</tr>
+<tr>
+  <td>newTitle</td>
+  <td>My first transfer</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+  <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56884"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"92628"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"592758"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"add_target"</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Add new transfer destination to LT023350090100022350 , monthly limit: 0.00 EUR, and send 5.00 EUR"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint sends a new transaction.</p>
+<h4 id='business-api-transfers-send-transaction-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-transfers-send-transaction-request-fields'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>targetId</td>
+<td>ID of target</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>Sent amount</td>
+<td>String</td>
+</tr>
+<tr>
+<td>newTitle</td>
+<td>Title of transfer</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-transfers-send-transaction-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>obj_data</td>
+<td>Additional data for some actions</td>
+<td>String</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<h3 id='business-api-transfers-get-transfers'>Get Transfers</h3>
+
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>get_transactions</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>9be238470c8ef012205ce766ab23f7b8</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1587103994</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>b5afffd2effe07da03565dc52a2caff3bc62a9a8b00d8c11493bf2acf58f119b42b983dfe9b6b80555018ec059bdd4b289c55217e47709311688c5c9024ff60d</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>last</td>
+<td>0</td>
+</tr>
+<tr>
+<td>balance</td>
+<td>0</td></tr></tbody></table></code></pre>
+
+
+<blockquote><div><p>Response</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w"></span>
+  <span class="s2">"session"</span><span class="p">:</span><span class="w"> </span><span class="s2">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"transactions"</span><span class="p">:</span><span class="w"> </span><span class="s2"></span><span class="p">[</span><span class="w"></span>
+    <span class="p">{</span><span class="w"></span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"592757"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"balance_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12468"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"target_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"90.000000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fee"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epay transfer"</span><span class="w">
+      <span class="p">},</span><span class="w"></span>
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"done"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"born"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:48:04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:48:04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sepa_msgid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"new transaction"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_from_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LT403350090100022345"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_from_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Leszek R"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_to_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d.drozd+1@bioinfo.pl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_to_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Damian Drozd"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_official"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d.drozd+1@bioinfo.pl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EPUALT22XXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LT113350090100022382"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+    <span class="p">},</span><span class="w"></span>
+    <span class="p">{</span><span class="w"></span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"592756"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"balance_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12468"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"target_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fee"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10.000000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Account opening fee"</span><span class="w">
+      <span class="p">},</span><span class="w"></span>
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"done"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"born"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:48:03"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-18 13:48:03"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sepa_msgid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"account opening fee"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_from_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">null"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_from_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_to_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data_to_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_official"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"from_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d.drozd+1@bioinfo.pl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_bic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EPUALT22XXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_iban"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LT113350090100022382"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"to_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+    <span class="p">}</span><span class="w"></span>
+  <span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre>
+
+<p>This endpoint retrieves historical transactions.</p>
+<h4 id='business-api-transfers-get-transfers-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-transfers-get-transfers-request-payload'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>last</td>
+<td>Index of transaction at which to begin extraction</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>balance</td>
+<td>ID of balance</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-transfers-get-transfers-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>transactions</td>
+<td>List of transactions</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>transactions[n].id</td>
+<td>ID of transaction</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].balance_id</td>
+<td>ID of transaction's balance</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].target_id</td>
+<td>ID of target</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].amount</td>
+<td>Amount send in the transaction</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].fee</td>
+<td>Fee of the transaction</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data</td>
+<td>Object with data details</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>transactions[n].data.title</td>
+<td>Title of transaction's data</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].status</td>
+<td>Status of the transaction</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].born</td>
+<td>Creation date of transaction</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].sepa_msgid</td>
+<td>SEPA message ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_title</td>
+<td>Title of the transaction</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_from_iban</td>
+<td>IBAN of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_from_name</td>
+<td>Name of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_to_iban</td>
+<td>IBAN of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].data_to_name</td>
+<td>Name of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].currency</td>
+<td>Currency symbol</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].from_official</td>
+<td>Official name of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].from_name</td>
+<td>Name of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].from_bic</td>
+<td>BIC of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].from_iban</td>
+<td>IBAN of sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_name</td>
+<td>Name of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_bic</td>
+<td>BIC of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_iban</td>
+<td>IBAN of receiver</td>
+<td>String</td>
+</tr>
+<tr>
+<td>transactions[n].to_email</td>
+<td>Email address of receiver</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+
+<h2 id='business-api-actions'>Actions</h2>
+<h3 id='business-api-actions-get-action'>Get Action</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>get_action</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>1279da9afd103c53a22dc1ba60546960</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1584538156</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>actionId</td>
+<td>92628</td>
+</tr>
+</tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code>
+<span class="p">{</span><span class="w"></span>
+  <span class="s2">"session"</span><span class="p">:</span><span class="w"> </span><span class="s2">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"actions"</span><span class="p">:</span><span class="w"> </span><span class="s2"></span><span class="p">[</span><span class="w"></span>
+    <span class="p">{</span><span class="w"></span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56915"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pkey_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22654"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"utime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1584693374"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"waiting"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"change_pin"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obj_data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01234"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-20 09:36:15"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ipa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"85.10.198.13"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Change pin"</span><span class="p">,</span><span class="w">
+    <span class="p">}</span><span class="w"></span>
+  <span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre>
+
+<p>This endpoint retrieves action by ID.</p>
+<h4 id='business-api-actions-get-action-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-actions-get-action-request-fields'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actionId</td>
+<td>ID of action to retrieve</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-actions-get-action-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>ID of action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey_id</td>
+<td>ID of public key</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of action</td>
+<td>String</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Description of task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_data</td>
+<td>Additional data for some actions</td>
+<td>String</td>
+</tr>
+<tr>
+<td>errors</td>
+<td>Errors</td>
+<td>String</td>
+</tr>
+<tr>
+<td>sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ipa</td>
+<td>IP address of action dispatcher</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of action</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+<h3 id='business-api-actions-cancel-action'>Cancel Action</h3>
+
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>cancel</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>1279da9afd103c53a22dc1ba60546960</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1584538156</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>actionId</td>
+<td>0</td>
+</tr>
+<tr>
+<td>task</td>
+<td>0</td>
+</tr>
+<tr>
+<td>objId</td>
+<td>0</td>
+</tr>
+</tbody></table></code></pre>
+
+<blockquote><div><p>Response</p></div></blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56913"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"change_phone"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cancel action"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cancel"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint cancels an action with the given ID.</p>
+<h4 id='business-api-actions-cancel-action-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-actions-cancel-action-request-payload'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actionId</td>
+<td>ID of action to retrieve</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>ID of task</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>objId</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-actions-cancel-action-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the account ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>obj_id</td>
+<td>ID of manipulated object</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>task</td>
+<td>Name of dispatched task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>trusted</td>
+<td>Does action require confirmation</td>
+<td>String</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description of the task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the action</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+
+<h3 id='business-api-actions-get-actions'>Get Actions</h3>
+<blockquote><div><p>Request body form-data</p></div></blockquote>
+
+<pre class="highlight json tab-json"><code><table class='request-body-table'><thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>get_actions</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>1279da9afd103c53a22dc1ba60546960</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>1584538156</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>95c06670618e91e164695a791bffdc1fed888bd01f753e63954742781f42528d5642dff2f8b5633506181c85b3b7a096d00e23ee58bef6844eed1b991c081205</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>lastId</td>
+<td>592759</td></tr></tbody></table></code></pre>
+
+  <blockquote>
+    <div><p>Response</p></div>
+  </blockquote>
+<pre class="highlight json tab-json"><code>
+<span class="p">{</span><span class="w"></span>
+  <span class="s2">"session"</span><span class="p">:</span><span class="w"> </span><span class="s2">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"actions"</span><span class="p">:</span><span class="w"> </span><span class="s2"></span><span class="p">[</span><span class="w"></span>
+    <span class="p">{</span><span class="w"></span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56915"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ipa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"127.0.0.1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-20 09:36:15"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"change_pin"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"utime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1584693374"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"waiting"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pkey_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22654"</span><span class="w">
+    <span class="p">}</span><span class="w"></span><span class="p">,</span>
+    <span class="p">{</span><span class="w"></span>
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5876"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ipa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"127.0.0.1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-20 09:36:15"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"del_target"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"utime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1584699147"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obj_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22654"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"done"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pkey_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22654"</span><span class="w">
+    <span class="p">}</span><span class="w"></span>
+  <span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre>
+
+<h4 id='business-api-actions-get-actions-request'>Request</h4>
+<p><code>POST https://epayblock.com/api/api.php</code></p>
+
+<h5 id='business-api-actions-get-actions-request-fields'>Request body form-data</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>method</td>
+<td>Method to dispatch</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pkey</td>
+<td>First half of public key (32char)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>Your account PIN</td>
+<td>String</td>
+</tr>
+<tr>
+<td>lastId</td>
+<td>Index at which to begin extraction</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+
+<h4 id='business-api-actions-get-actions-response'>Response</h4>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actions</td>
+<td>List of actions</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>actions[n].id</td>
+<td>ID of action</td>
+<td>String</td>
+</tr>
+<tr>
+  <td>actions[n].ipa</td>
+  <td>IP address of action dispatcher</td>
+  <td>String</td>
+</tr>
+<tr>
+<td>actions[n].sync</td>
+<td>Time of modification in database</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actions[n].task</td>
+<td>Description of task</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actions[n].utime</td>
+<td>Timestamp of the action</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>actions[n].errors</td>
+<td>Errors</td>
+<td>String</td>
+</tr>
+<tr>
+<td>actions[n].obj_id</td>
+<td>ID of manipulated object</td>
+<td>String</td>
+</tr>
+<tr>
+  <td>actions[n].status</td>
+  <td>Status of action</td>
+  <td>String</td>
+</tr>
+<tr>
+<td>actions[n].pkey_id</td>
+<td>ID of public key</td>
+<td>Number</td>
+</tr>
+</tbody></table>
+      </div>
+    </div>
+  </body>
+</html>
+© 2020 GitHub, Inc.
+
